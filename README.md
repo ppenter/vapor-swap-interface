@@ -22,3 +22,22 @@ yarn start
 
 **Please open all pull requests against the `main` branch.**
 CI checks will run against all PRs.
+
+
+## For developer
+
+npx hardhat deploy-factory --network telostestnet
+
+npx hardhat deploy-router --network telostestnet
+npx hardhat deploy-multicall2 --network telostestnet
+
+// Then deploy custom reward token
+
+// Add liquidity
+
+npx hardhat deploy-minichef --network telostestnet
+npx hardhat deploy-rewarder --network telostestnet
+npx hardhat set-emission --network telostestnet
+
+npx hardhat add-pool --allocpoint 100 --lptoken **lp token address** --network telostestnet
+npx hardhat add-rewarder --allocpoint 100 --pid 0 --network evmostestnet
