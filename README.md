@@ -26,6 +26,8 @@ CI checks will run against all PRs.
 
 ## For developer
 
+```bash
+
 npx hardhat deploy-factory --network telostestnet
 
 npx hardhat deploy-router --network telostestnet
@@ -41,3 +43,5 @@ npx hardhat set-emission --network telostestnet
 
 npx hardhat add-pool --allocpoint 100 --lptoken **lp token address** --network telostestnet
 npx hardhat add-rewarder --allocpoint 100 --pid 0 --network evmostestnet
+
+```
